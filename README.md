@@ -1,6 +1,7 @@
 # AssetStoreApplication
 
 #signin
+
 POST - http://localhost:8080/api/auth/signin
 
 {
@@ -9,10 +10,16 @@ POST - http://localhost:8080/api/auth/signin
 }
 
 #AssetStore
+
 Authentication Type -Bearer token
+
+
 GET - http://localhost:8080/api/asset   
+
 GET - http://localhost:8080/api/asset/1001
+
 POST - http://localhost:8080/api/assets
+
 {
         "id": 1004,
         "assetname": "nokia",
@@ -27,7 +34,9 @@ POST - http://localhost:8080/api/assets
             }
         ]
     }
+    
 PUT - http://localhost:8080/api/asset/1001
+
 {
         "id": 1004,
         "assetname": "samsung",
@@ -42,5 +51,6 @@ PUT - http://localhost:8080/api/asset/1001
             }
         ]
     }
+    
 DELETE - http://localhost:8080/api/asset/1001
 
